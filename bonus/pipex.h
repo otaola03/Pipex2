@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:54:19 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 17:00:57 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:39:02 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,6 @@ void	ft_keep_pipe_in_file(t_input *input, int doc_on);
 void	ft_here_doc(t_input *input);
 
 /*------- GET-NEXT-LINE -------*/
-
-char *get_next_line(int fd);
-
+char	*get_next_line(int fd);
 
 #endif

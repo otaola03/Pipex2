@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:57:28 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/05 20:06:06 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:38:14 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_here_doc(t_input *input)
 		if (!ft_strncmp(entry, input->delimiter, ft_strlen(input->delimiter)))
 		{
 			free(entry);
-			break;
+			break ;
 		}
 		write(input->pipes[0][WRITE], entry, ft_strlen(entry) - 1);
 		write(input->pipes[0][WRITE], "\n", 1);

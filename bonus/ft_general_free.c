@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 12:52:15 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 18:32:13 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:35:13 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ void	ft_general_free(t_input *input)
 	ft_free_files(input);
 	ft_free_childs(input);
 	ft_free_cmd(input->cmd);
-//	ft_free_2d_arr(input->path);
 	free(input);
 	exit(-1);
 }

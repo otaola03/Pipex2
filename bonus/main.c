@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 19:40:42 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 18:30:08 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:43:54 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	main(int argc, char **argv, char **env)
 {
 	t_input	*input;
-	int doc_on;
+	int		doc_on;
 
 	if (argc >= 5)
 	{

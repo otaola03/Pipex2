@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:02:26 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 18:16:36 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:35:32 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ void	ft_get_cmd(int argc, char **argv, char **env, t_input *input)
 	int		i;
 
 	input->cmd = (char ***)malloc(sizeof(char **) * ((argc - 2) + 1));
-//	input->path = (char **)malloc(sizeof(char *) * (argc - 2 + 1));
 	i = 0;
 	while (i < argc - 2)
 	{
@@ -75,9 +74,7 @@ void	ft_get_cmd(int argc, char **argv, char **env, t_input *input)
 			return ;
 		ft_split(input->cmd[i], argv[i + 1]);
 		input->cmd[i][0] = ft_get_path(input->cmd[i][1], env);
-//		input->path[i] = ft_get_path(input->cmd[i][0], env);
 		i++;
 	}
 	input->cmd[i] = NULL;
-//	input->path[i] = NULL;
 }
