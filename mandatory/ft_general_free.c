@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 12:52:15 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/08 16:59:25 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:33:36 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,6 @@ void	ft_free_files(t_input *input)
 {
 	free(input->infile);
 	free(input->outfile);
-	free(input->delimiter);
 }
 
 void	ft_general_free(t_input *input)

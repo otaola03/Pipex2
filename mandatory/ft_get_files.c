@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:15:53 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 19:05:23 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:30:57 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,10 @@ t_input	*ft_get_files(int argc, char **argv, int start)
 	input->infile = ft_strdup(*(argv + start));
 	if (access(input->infile, F_OK | R_OK))
 	{
-		perror("\0");
+		perror("");
 		free(input->infile);
 		free(input->outfile);
+		free(input);
 		exit(-1);
 	}
 	return (input);

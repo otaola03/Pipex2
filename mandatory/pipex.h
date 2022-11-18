@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:54:19 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/08 17:00:13 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/18 20:26:28 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ typedef struct s_input
 	char	***cmd;
 	char	*infile;
 	char	*outfile;
-	char	*delimiter;
 	char	**path;
 	int		**pipes;
 	int		*pid;
