@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:20:39 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/19 19:48:56 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:55:03 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 int	ft_strlen(char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:36:39 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 18:21:35 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:56:30 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 int	ft_count_words(char *s)
 {

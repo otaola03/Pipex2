@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 20:33:32 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/02 19:32:48 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:55:13 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 void	ft_pipe(int *fd, t_input *input)
 {

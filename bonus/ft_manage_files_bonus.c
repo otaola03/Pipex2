@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 16:31:00 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/06 13:22:26 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:56:13 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 void	ft_keep_file_in_pipe(t_input *input)
 {

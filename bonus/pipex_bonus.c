@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 19:19:51 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 18:37:26 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:56:46 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 void	ft_child_process(int i, int argc, t_input *input, int doc_on)
 {

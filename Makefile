@@ -30,13 +30,13 @@ OBJS = $Omain.o $Oft_aux.o $Oft_get_cmd.o $Oft_get_files.o $Oft_split.o \
 		$Oft_general_free.o $Opipex.o $Oft_functions.o $Oft_manage_files.o \
 
 
-SRCS_BONUS =  $Bmain.c $Bft_aux.c $Bft_get_cmd.c $Bft_get_files.c $Bft_split.c \
-		$Bft_general_free.c $Bpipex.c $Bft_functions.c $Bft_manage_files.c \
-		$Bft_here_doc.c $Bft_get_next_line.c\
+SRCS_BONUS =  $Bmain_bonus.c $Bft_aux_bonus.c $Bft_get_cmd_bonus.c $Bft_get_files_bonus.c $Bft_split_bonus.c \
+		$Bft_general_free_bonus.c $Bpipex_bonus.c $Bft_functions_bonus.c $Bft_manage_files_bonus.c \
+		$Bft_here_doc_bonus.c $Bft_get_next_line_bonus.c\
 
-OBJS_BONUS = $Jmain.o $Jft_aux.o $Jft_get_cmd.o $Jft_get_files.o $Jft_split.o \
-		$Jft_general_free.o $Jpipex.o $Jft_functions.o $Jft_manage_files.o \
-		$Jft_here_doc.o $Jft_get_next_line.o\
+OBJS_BONUS = $Jmain_bonus.o $Jft_aux_bonus.o $Jft_get_cmd_bonus.o $Jft_get_files_bonus.o $Jft_split_bonus.o \
+		$Jft_general_free_bonus.o $Jpipex_bonus.o $Jft_functions_bonus.o $Jft_manage_files_bonus.o \
+		$Jft_here_doc_bonus.o $Jft_get_next_line_bonus.o\
 
 
 F = -fsanitize=address

@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 19:40:42 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:43:54 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:56:39 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 int	main(int argc, char **argv, char **env)
 {

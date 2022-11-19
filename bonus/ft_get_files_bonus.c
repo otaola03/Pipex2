@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:15:53 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:31:35 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:55:45 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 t_input	*ft_get_files(int argc, char **argv, int start)
 {

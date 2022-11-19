@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_here_doc.c                                      :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 16:57:28 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:38:14 by jperez           ###   ########.fr       */
+/*   Created: 2022/11/05 18:36:14 by jperez            #+#    #+#             */
+/*   Updated: 2022/11/19 19:55:53 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
-void	ft_here_doc(t_input *input)
+char	*get_next_line(int fd)
 {
-	char	*entry;
+	int		i;
+	int		rd;
+	char	c[2];
+	char	*buf;
+	char	*aux;
 
-	while (1)
+	rd = 1;
+	i = 0;
+	buf = (char *)malloc(sizeof(char) * 1);
+	buf[0] = '\0';
+	while (rd > 0)
 	{
-		entry = get_next_line(0);
-		if (!ft_strncmp(entry, input->delimiter, ft_strlen(input->delimiter)))
-		{
-			free(entry);
+		rd = read(fd, &c, 1);
+		c[rd] = '\0';
+		aux = buf;
+		buf = ft_strjoin(buf, c);
+		free(aux);
+		i++;
+		if (c[0] == '\n')
 			break ;
-		}
-		write(input->pipes[0][WRITE], entry, ft_strlen(entry) - 1);
-		write(input->pipes[0][WRITE], "\n", 1);
-		free(entry);
 	}
+	if ((!buf[i - 1] && !rd) || rd == -1)
+		return (free(buf), NULL);
+	return (buf);
 }

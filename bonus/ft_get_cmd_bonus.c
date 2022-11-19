@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:02:26 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:35:32 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:55:36 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 char	*ft_check_path_acces(char *cmd, char **env_path)
 {

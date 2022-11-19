@@ -6,11 +6,11 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 12:52:15 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:35:13 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:55:20 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
 void	ft_free_cmd(char ***cmd)
 {

@@ -6,13 +6,13 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:54:19 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:39:02 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/19 19:54:48 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PIPEX_H
+#ifndef PIPEX_BONUS_H
 
-# define PIPEX_H
+# define PIPEX_BONUS_H
 
 # include<fcntl.h>
 # include<unistd.h>
