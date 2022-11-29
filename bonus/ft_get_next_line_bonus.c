@@ -6,11 +6,24 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 18:36:14 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/19 19:55:53 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/29 18:08:36 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"pipex_bonus.h"
+
+char	*ft_check_str(char *str)
+{
+	if (str[0])
+	{
+		return (str);
+	}
+	else
+	{
+		free(str);
+		return (NULL);
+	}
+}
 
 char	*get_next_line(int fd)
 {
@@ -36,6 +49,6 @@ char	*get_next_line(int fd)
 			break ;
 	}
 	if ((!buf[i - 1] && !rd) || rd == -1)
-		return (free(buf), NULL);
+		return (ft_check_str(buf));
 	return (buf);
 }
