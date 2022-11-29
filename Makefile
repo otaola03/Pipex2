@@ -6,7 +6,7 @@
 #    By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/17 19:18:14 by jperez            #+#    #+#              #
-#    Updated: 2022/11/29 19:24:49 by jperez           ###   ########.fr        #
+#    Updated: 2022/11/29 20:38:24 by jperez           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,9 @@ J = objs_b/
 
 NAME = pipex
 
-CC = gcc -g3
+//F = -fsanitize=address
+
+CC = gcc -g3 $(F)
 CFLAGS = -Wall -Werror -Wextra
 
 RM = -rm -rf
@@ -39,7 +41,6 @@ OBJS_BONUS = $Jmain_bonus.o $Jft_aux_bonus.o $Jft_get_cmd_bonus.o $Jft_get_files
 		$Jft_here_doc_bonus.o $Jft_get_next_line_bonus.o\
 
 
-F = -fsanitize=address
 
 all: $(NAME)
 
