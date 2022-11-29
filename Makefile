@@ -6,7 +6,7 @@
 #    By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/17 19:18:14 by jperez            #+#    #+#              #
-#    Updated: 2022/11/17 19:18:55 by jperez           ###   ########.fr        #
+#    Updated: 2022/11/29 19:24:49 by jperez           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ J = objs_b/
 
 NAME = pipex
 
-CC = gcc
+CC = gcc -g3
 CFLAGS = -Wall -Werror -Wextra
 
 RM = -rm -rf
