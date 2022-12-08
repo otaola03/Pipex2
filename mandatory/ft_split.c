@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:36:39 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/07 18:21:35 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/08 19:54:44 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ char	**ft_split_2(char **matrix, char *str, char c)
 		while ((str[i] == c && str[i]))
 			i++;
 		j = 0;
-		while (str[j] != c && str[j])
+		while (str[i + j] != c && str[i + j])
 			j++;
 		matrix[k] = (char *)malloc(sizeof(char) * (j + 1));
 		if (!matrix[k])
