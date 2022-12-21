@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pipex2.c                                           :+:      :+:    :+:   */
+/*   ft_check_argv.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/31 19:40:42 by jperez            #+#    #+#             */
-/*   Updated: 2022/12/21 17:17:15 by jperez           ###   ########.fr       */
+/*   Created: 2022/12/21 17:16:37 by jperez            #+#    #+#             */
+/*   Updated: 2022/12/21 17:29:53 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"pipex.h"
+#include"pipex_bonus.h"
 
-int	main(int argc, char **argv, char **env)
+int	ft_check_argv(int argc, char **argv)
 {
-	t_input	*input;
+	int	i;
 
-	if (argc == 5 && !ft_check_argv(argc, argv))
-	{
-		input = ft_get_files(--argc, ++argv, 0);
-		ft_get_cmd(argc, argv, env, input);
-		ft_pipex(argc, input);
-		ft_general_free(input);
-	}
+	i = 0;
+	while (++i < argc)
+		if (ft_strlen(argv[i]) == 0)
+			return (1);;
+	return (0);
 }

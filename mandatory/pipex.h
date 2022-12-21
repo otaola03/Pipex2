@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:54:19 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/18 20:26:28 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/21 17:18:57 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,9 @@ int		ft_strlen(char *str);
 char	*ft_strdup(char *str);
 char	*ft_strjoin(char *s1, char *s2);
 int		ft_strncmp(char *s1, char *s2, size_t n);
+
+/*------- AUX -------*/
+int	ft_check_argv(int argc, char **argv);
 
 /*------- GET-FILES -------*/
 

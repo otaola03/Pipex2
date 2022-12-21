@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 19:40:42 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/19 19:56:39 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/21 17:25:13 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main(int argc, char **argv, char **env)
 	t_input	*input;
 	int		doc_on;
 
-	if (argc >= 5)
+	if (argc >= 5 && !ft_check_argv(argc, argv))
 	{
 		doc_on = 0;
 		if (ft_strncmp("here_doc", *(argv + 1), 8) == 0)
