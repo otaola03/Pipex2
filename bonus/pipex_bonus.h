@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:54:19 by jperez            #+#    #+#             */
-/*   Updated: 2022/12/21 17:26:03 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/21 18:46:00 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strjoin(char *s1, char *s2);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 
 /*------- CHECK-ARGV -------*/
-int	ft_check_argv(int argc, char **argv);
+int		ft_check_argv(int argc, char **argv);
 
 /*------- GET-FILES -------*/
 

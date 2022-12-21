@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:15:53 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/19 19:55:45 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/21 18:31:34 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ t_input	*ft_get_files(int argc, char **argv, int start)
 	if (start == 1)
 	{
 		input->delimiter = ft_strdup(*argv);
+		if (ft_strlen(*argv) == 0)
+			input->delimiter[0] = '\n';
 		input->infile = ft_strdup("NULL");
 	}
 	else

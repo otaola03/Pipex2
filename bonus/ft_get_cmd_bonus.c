@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:02:26 by jperez            #+#    #+#             */
-/*   Updated: 2022/11/29 20:35:39 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/21 18:21:48 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_aux_free(t_input *input, char **env_path)
 {
-	write(1, "Bad addressHH\n", 12);
+	write(1, "Bad address\n", 12);
 	ft_free_files(input);
 	ft_free_2d_arr(env_path);
 	if (input->cmd[0])
