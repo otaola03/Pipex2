@@ -6,7 +6,7 @@
 /*   By: jperez <jperez@student.42urduliz.>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 17:16:37 by jperez            #+#    #+#             */
-/*   Updated: 2022/12/21 17:51:55 by jperez           ###   ########.fr       */
+/*   Updated: 2022/12/26 16:51:44 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_check_infile(char *infile)
 		return (1);
 	}
 	close(fd);
-	return (1);
+	return (0);
 }
 
 int	ft_check_argv(int argc, char **argv)
